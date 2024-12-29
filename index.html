@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo Git e GitHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Entendendo Git e GitHub</h1>
+    </header>
+    <main>
+        <h2>O que é Git?</h2>
+        <p>Git é como uma ferramenta para guardar as versões de um projeto, ajudando a organizar tudo. Com ele, podemos voltar a versões antigas do nosso trabalho se algo der errado. É como usar o "desfazer" em um editor de texto, mas para códigos e arquivos importantes.</p>
+        <p>Também dá para ver todas as mudanças que foram feitas, quem as fez e quando. Isso ajuda muito em projetos feitos por várias pessoas ou mesmo quando você está trabalhando sozinho.</p>
+
+        <h2>O que é GitHub?</h2>
+        <p>O GitHub é um lugar na internet onde você pode guardar seus projetos feitos com o Git. É como uma nuvem especial para programadores. Assim, você não perde seus arquivos, mesmo que algo aconteça com seu computador.</p>
+        <p>Além disso, o GitHub é ótimo para trabalhar em equipe. Cada pessoa pode fazer mudanças no projeto sem bagunçar o trabalho dos outros. Para isso, usamos as "branches", que são como versões separadas do projeto. Quando tudo estiver pronto, juntamos as mudanças na versão principal.</p>
+
+        <h2>Como começar com Git</h2>
+        <h3>1. Instalando o Git</h3>
+        <p>Entre no site oficial do Git <a href="https://git-scm.com/downloads">clicando aqui</a> e baixe o programa. Instale seguindo as instruções do site. Quando terminar, reinicie o computador para garantir que está tudo funcionando.</p>
+        <p>Depois, abra o terminal (PowerShell no Windows ou Terminal no macOS/Linux) e digite:</p>
+        <pre>git --version</pre>
+        <p>Se aparecer a versão do Git, está tudo certo!</p>
+
+        <h3>2. Criando uma conta no GitHub</h3>
+        <p>Acesse o <a href="https://github.com/">site do GitHub</a> e crie uma conta gratuita. Você vai precisar dela para guardar seus projetos na nuvem.</p>
+
+        <h3>3. Começando o projeto</h3>
+        <ul>
+            <li>No computador, escolha ou crie uma pasta para o projeto.</li>
+            <li>Abra o terminal dentro dessa pasta e digite:</li>
+        </ul>
+        <pre>git init</pre>
+        <p>Isso começa o controle de versões do seu projeto.</p>
+
+        <h2>Comandos básicos do Git</h2>
+        <ul>
+            <li><strong>Configurar:</strong></li>
+            <pre>git config --global user.name "Seu Nome"</pre>
+            <pre>git config --global user.email "seuemail@example.com"</pre>
+
+            <li><strong>Trabalhar no projeto:</strong></li>
+            <pre>git add .</pre>
+            <pre>git commit -m "Mensagem"</pre>
+
+            <li><strong>Enviar para o GitHub:</strong></li>
+            <pre>git remote add origin URL</pre>
+            <pre>git push -u origin main</pre>
+        </ul>
+
+        <h2>Conclusão</h2>
+        <p>O Git e o GitHub são ferramentas incríveis para guardar e organizar seus projetos. Eles também ajudam muito quando você trabalha em equipe. Comece instalando o Git, configure sua conta no GitHub e teste os comandos. Em pouco tempo, você vai ver como é fácil e útil usar essas ferramentas!</p>
+    </main>
+</body>
+</html>
